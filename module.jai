@@ -1,3 +1,30 @@
+// module:   SDL3
+// file:     module.jai
+// author:   James Oswald <jamesoswald111@gmail.com>, jamesoswald.dev
+// modified: jak2         <jak2@clover-work.shop>
+//
+///////////////////////////////////
+//                               //
+//                  +xxxx        //
+//       +xxx+    +xxxxxxx       //
+//     +xxxxxxx+  xxxxxxxx<      //
+//     +xxxxxxxx+ xxx$xxxxxxxx+  //
+//   x+xxxxx$$$$xxx$$$$$xxxxxxxx //
+// xxxxxxxxx$$xx$xxxx$$$$$xxxxxx //
+// +xxxxxx$$$xxxxx+xxxxx$$xxxx+  //
+//  xxxxxx$$$$$xx+xx++xxxx++     //
+//    +xxxxx++$+xxxxx$$xx+       //
+//          +$x$xx$$$$$$xxx      //
+//          $xx$$$$x$$xxxxx+     //
+//         $+xxxxxxxxxxxxxx+     //
+//        +$+xxxxxxxxxxxxxx      //
+//        ++ xxxxxx'`xx++        //
+//        +x                     //
+//        +$.                    //
+//         $+.                   //
+//                               //
+///////////////////////////////////
+//
 
 #module_parameters(SDL_MAIN_USE_CALLBACKS := true);
 

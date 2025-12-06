@@ -3,6 +3,22 @@
 
 #if OS == .WINDOWS {
     sdl3 :: #library,no_dll "windows/lib/SDL3";
+
+    #system_library,link_always "user32";
+    #system_library,link_always "gdi32";
+    #system_library,link_always "advapi32";
+    #system_library,link_always "ole32";
+    #system_library,link_always "shell32";
+    #system_library,link_always "winmm";
+    #system_library,link_always "setupapi";
+    #system_library,link_always "version";
+    #system_library,link_always "imm32";
+    #system_library,link_always "cfgmgr32";
+    #system_library,link_always "oleaut32";
+    #system_library,link_always "uuid";
+    #system_library,link_always "msvcrt";
+    #system_library,link_always "oldnames";
+    
     #load "windows/SDL.jai";
 } else {
     log_error("Unsupported SDL3 platform");
@@ -44,6 +60,8 @@ SDL_WINDOW_NOT_FOCUSABLE        :: 0x0000000080000000;    /**< window should not
 
 
 #scope_file
+
+#import "Compiler";
 
 SDL_AppInit_jai_func    :: #type (**void, s32, **u8) -> SDL_AppResult;
 SDL_AppEvent_jai_func   :: #type (*void, *SDL_Event) -> SDL_AppResult;
